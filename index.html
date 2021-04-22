@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/PH-2iORSfQs-iizoHzePXBaJCXml443pgoC14-lZESLFIp78A4SvxLKUVv1FyIQFtC8">
+    <script src="https://kit.fontawesome.com/ee3d587ec6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="cantainer-fluid">
+            <a href="#" class="navbar-brand">ToDo App</a>
+            <div class="ml-auto d-flex">
+                <div class="sideBar">
+                    <button class="btn text-light user-menu user-menu-line"><i class="fas fa-user-circle"></i></button>
+                    <div class="text-center">
+                        <select class="form-control theme-selector btn" name="" id="">
+                            <option value="dark">Dark</option>
+                            <option value="light">Light</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                        <p class="outupUsername text-info text-center mt-3 mb-3"></p>
+                        <p class="outupId text-info text-center mt-3 mb-3"></p>
+                        <button class="btn btn-danger signOutBtn">Sign out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="form">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title mb-0 text-center">Add new task</h3>
+                <div class="card-body text-center">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control title" name="" id="" placeholder="Title">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control content"rows="5" placeholder="Description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-lg submitBtn">New Task</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row cards">
+            
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</body>
+</html>

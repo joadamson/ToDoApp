@@ -1,0 +1,73 @@
+.form {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.content {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.theme-selector{
+    width: 100px !important;
+    background: gray !important;
+    color: #FFF !important;
+}
+
+.shorted {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.completed {
+    position: relative;
+}
+
+.completed::before {
+    content: 'Approved!';
+    width: 94.5%;
+    height: 80%;
+    background: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    position: absolute;
+    top: 0; 
+    z-index: 99;
+    transition: .3s;
+}
+
+.completed:hover:before {
+    font-size: 60px;
+    transition: .3s;
+}
+
+.ml-auto {
+    position: relative;
+}
+
+.user-menu {
+    position: relative;
+    right: 22%;
+    top: 1.5%;
+}
+
+.sideBar {
+    background: rgba(0, 0, 0, .9);
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -15%;
+    transition: .5s;
+}
+
+.sideBar.activeSide {
+    transition: .5s;
+    right: 0;
+}
